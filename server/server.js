@@ -20,15 +20,13 @@ app.post('/todos',(req, res) => {
     },(e) => {
       res.status(400).send(e);
     });
-
-
 });
 
 app.listen(3000 , () => {
   console.log('Server started on 3000');
 });
 
-
+module.exports = {app};
 
 // var newTodo = new Todo({
 //   text:'  Edit this video    '
